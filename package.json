@@ -1,7 +1,7 @@
 {
   "name": "primerreact",
   "version": "0.1.0",
-  "homepage": "https://djcabe23.github.io/ProyectoReact/",
+  "homepage": "https://djcabe23.github.io/ProyectoReact",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",

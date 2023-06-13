@@ -1,4 +1,4 @@
-import Cart, { FaShoppingCart } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
 
 function Carto() {
     return (

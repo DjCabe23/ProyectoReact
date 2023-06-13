@@ -13,13 +13,13 @@ function NavBar() {
 
             <div className="columns is-centered">
                 <div className="column is-narrow">
-                    <button class="button is-large">Home</button>
+                    <button className="button is-large">Home</button>
                     </div>
                     <div className="column is-narrow">
-                    <button class="button is-large is-multiline" >Tienda</button>
+                    <button className="button is-large is-multiline" >Tienda</button>
                     </div>
                     <div className="column is-narrow">
-                    <button class="button is-large is-multiline">Nosotros</button>
+                    <button className="button is-large is-multiline">Nosotros</button>
                     </div>
 
       

@@ -3,7 +3,7 @@ import Carito from "./Cart/Cart"
 
 function NavBar() {
     return(
-        <nar>
+        <nav>
              <div className="container is-max-desktop has-text-centered">
                  <div className="notification is-primary" >
                     <strong>LO DEL CABE</strong> 
@@ -25,7 +25,7 @@ function NavBar() {
       
             </div>
       
-        </nar>
+        </nav>
     )
 
     

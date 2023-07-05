@@ -1,13 +1,21 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import NarBar from "./Components/NavBar"
 import ItemListContainer from './Components/ItemListContainer/itemListContainer'
-import ItemCount from './Components/Itemcount/ItemCount'
+import ItemDetailConteiner from "./Components/ItemDetailContainer/ItemDetailContainer";
+
 
 function App() {
     return(
         <div className="App">
             <NarBar/>
-            <ItemListContainer greeting ={'Bienvenidos'}/>
-            <ItemCount initial={1} stock={10} onAdd={(quantity)=> console.log('cantidad agrgada', quantity)}/>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<ItemListContainer/>}/>
+                    <Route path="/category/:categoryId" element={<ItemListContainer/>}/>
+                    <Route path="/item/:itemId" element={<ItemDetailConteiner/>}/>
+                    <Route path="*" element={<h1>404 NOT FOUND</h1>}/>
+                </Routes>
+            </BrowserRouter>
         </div>
     )   
     

@@ -1,4 +1,4 @@
-import { resolve } from "path"
+
 import imagenes from "./Components/Img/imagenes"
 const Producto = [
     {
@@ -6,8 +6,7 @@ const Producto = [
         name: 'Cama',
         precio: 2000,
         categoria: 'Camas',
-        img: 'https://www.espacity.com/w/mueble/cama-eco/',
-       // img: <img src={imagenes.img1} alt="Imagen"/>,
+        img: <img src={imagenes.img1} alt="Imagen"/>,
         stock:10,
         descripcion: 'Descripcion de cama'
     },
@@ -15,7 +14,7 @@ const Producto = [
         id:2,
         name: 'Almohada ',
         precio: 1500,
-        categoria: 'Productos varios',
+        categoria: 'Accecsorios',
         img:<img src={imagenes.img2} alt="Imagen"/>,
         stock:20,
         descripcion: 'Descripcion de almohadas'
@@ -33,18 +32,26 @@ const Producto = [
 ]
 
 export const getProductos = () => {
-    return new Promise((resolve)=>{
+    return new Promise((Resolve)=>{
         setTimeout(()=>{
-            resolve(Producto)
+            Resolve(Producto)
         }, 1000)
     })
 }
 
 
 export const getProductosById = (ProductoId) => {
-    return new Promise((resolve) => {
+    return new Promise((Resolve) => {
         setTimeout(()=>{
-            resolve(Producto.find(prod => prod.id=== ProductoId))
+            Resolve(Producto.find(prod => prod.id=== ProductoId))
+        }, 1000)
+    })
+}
+
+export const getProductosByCategoria = (productosCategoria) => {
+    return new Promise ((Resolve)=> {
+        setTimeout(()=>{
+            Resolve(Producto.filter(prod=>prod.categoria === productosCategoria))
         }, 1000)
     })
 }

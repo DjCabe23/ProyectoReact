@@ -1,0 +1,21 @@
+.Itemimg{
+    width: 250px;
+}
+.info{
+    font-family: 'Courier New', Courier, monospace;
+   font-weight: bold;
+}
+
+.ItemFooter{
+    justify-content: center;
+}
+.option{
+    justify-content: center;
+}
+
+.cartItem{
+    width: auto;
+    background-color: beige;
+    justify-content: center;
+    padding-bottom: 30px;
+}

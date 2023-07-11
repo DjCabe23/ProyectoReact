@@ -1,12 +1,12 @@
+import "./Productos.css"
 
-import imagenes from "./Components/Img/imagenes"
 const Producto = [
     {
         id:1,
         name: 'Cama',
         precio: 2000,
         categoria: 'Camas',
-        img: <img src={imagenes.img1} alt="Imagen"/>,
+        img: "https://www.espacity.com/w/wp-content/uploads/01347001000028_1.jpg",
         stock:10,
         descripcion: 'Descripcion de cama'
     },
@@ -15,7 +15,7 @@ const Producto = [
         name: 'Almohada ',
         precio: 1500,
         categoria: 'Accecsorios',
-        img:<img src={imagenes.img2} alt="Imagen"/>,
+        img: "https://www.homecollection.com.ar/pub/media/catalog/product/cache/image/1200x1200/e9c3970ab036de70892d86c6d221abfe/r/e/relleno_50x70_1_1.jpg",
         stock:20,
         descripcion: 'Descripcion de almohadas'
     },
@@ -24,7 +24,7 @@ const Producto = [
         name: 'Sommier ',
         precio: 1500,
         categoria: 'Camas',
-        img:<img src={imagenes.img3} alt="Imagen"/>,
+        img:"https://www.colchoncity.com.ar/wp-content/uploads/compacfirm2022-sommier-2plazas.jpg",
         stock:5,
         descripcion: 'Descripcion de camas'
     },

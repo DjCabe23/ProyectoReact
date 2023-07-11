@@ -5,29 +5,15 @@ import { NavLink, Link } from "react-router-dom"
 function NavBar() {
     return(
         <nav className="NavBar">
-             <div className="container is-max-desktop has-text-centered">
-                 <div className="notification is-primary" >
+             <div className="Header">
+                 <div className="Header" >
                     <strong>LO DEL CABE</strong> 
                     <Carito/>
-                 </div>
-            </div>
-
-            <div className="columns is-centered">
-                <div className="column is-narrow">
-                    <button className="button is-large">Home</button>
-                    </div>
-                    <div className="column is-narrow">
-                    <button className="button is-large is-multiline" >Tienda</button>
-                    </div>
-                    <div className="column is-narrow">
-                    <button className="button is-large is-multiline">Nosotros</button>
-                    </div>
-            
-      
-            </div>
+                 </div> 
+            </div>          
         <Link to="/">
-            <h3>
-                Ecommerce
+            <h3 className="Menu"> 
+                Menu
             </h3>
         </Link>
             <div className="Categoias">
